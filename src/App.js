@@ -1,8 +1,16 @@
+import React from "react";
+import { LocationProvider } from "./contexts/LocationContext";
+import MainMap from "./components/MainMap";
+import Sidebar from "./components/Sidebar";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <LocationProvider>
+      <div className="App">
+        <MainMap />
+        <Sidebar />
+      </div>
+    </LocationProvider>
   );
 }
 
