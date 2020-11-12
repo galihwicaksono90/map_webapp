@@ -1,0 +1,51 @@
+.mainmap {
+  position: relative;
+  background: #282828;
+}
+
+.mainmap-image {
+  width: 100vw;
+  height: auto;
+}
+
+.mainmap-icons {
+  list-style: none;
+}
+
+.mainmap-icon {
+  position: absolute;
+  transform: scale(1) translate(-50%, -50%);
+  transform-origin: top left;
+  transition: transform 300ms ease;
+}
+
+.mainmap-icon:hover {
+  transform: scale(1.1) translate(-50%, -50%);
+  transform-origin: top left;
+  transition: transform 300ms ease;
+}
+.mainmap-icon-image {
+  max-height: 12vw;
+  /* max-height: 12rem; */
+  /* border: 2px solid red; */
+}
+
+/* /\* .kejajar-icon { *\/ */
+/*   top: 35%; */
+/*   left: 75%; */
+/* } */
+
+/* .mangli-icon { */
+/*   top: 68%; */
+/*   left: 11%; */
+/* } */
+
+/* .lengkong-icon { */
+/*   top: 48%; */
+/*   left: 75%; */
+/* } */
+
+/* .sendangsari-icon { */
+/*   top: 77%; */
+/*   left: 69%; */
+/* } */

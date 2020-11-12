@@ -1,32 +1,46 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
+import Sidebar from "./Sidebar";
 import { LocationContext } from "../contexts/LocationContext";
+import "./css/mainmap.css";
 
-const MainMap = () => {
+const MainMap = (props) => {
+  const [openSidebar, setOpenSidebar] = useState(false);
   const { locationState, locationDispatch } = useContext(LocationContext);
   const { currentLocation, availableAttractions } = locationState;
 
+  const iconStyle = (attraction) => {
+    return {
+      top: currentLocation.attractions[attraction].icon.position.top + "%",
+      left: currentLocation.attractions[attraction].icon.position.left + "%",
+    };
+  };
+
   return (
-    <div>
-      <ul>
+    <div className="mainmap">
+      <img className="mainmap-image" alt="" src={currentLocation.mapImage} />
+      <ul className="mainmap-icons">
         {availableAttractions.map((attraction, index) => (
           <li
             key={index}
-            onClick={() =>
-              locationDispatch({
-                type: "changeCurrentAttraction",
-                payload: attraction,
-              })
-            }
+            className={`mainmap-icon ${attraction}-icon`}
+            style={iconStyle(attraction)}
           >
             <img
-              style={{ height: "50px" }}
+              className={"mainmap-icon-image"}
               alt=""
-              src={currentLocation.attractions[attraction].icon}
+              src={currentLocation.attractions[attraction].icon.image}
+              onClick={() => {
+                setOpenSidebar(true);
+                locationDispatch({
+                  type: "changeCurrentAttraction",
+                  payload: attraction,
+                });
+              }}
             />
           </li>
-          /* <button onClick={() => console.log(attraction)}>{attraction}</button> */
         ))}
       </ul>
+      <Sidebar openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
     </div>
   );
 };
