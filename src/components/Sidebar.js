@@ -13,7 +13,7 @@ const SidebarContent = (props) => {
       <CSSTransition
         key={currentAttraction.name}
         timeout={duration}
-        classNames="fade-sidebar-content"
+        classNames="fade-content"
       >
         <div className="sidebar-content">
           <img
@@ -35,12 +35,17 @@ const Sidebar = (props) => {
     <CSSTransition
       in={props.openSidebar}
       timeout={duration}
-      classNames="fade-sidebar"
+      classNames="fade"
       unmountOnExit
     >
       <div className="sidebar">
         <SidebarContent setOpenSidebar={props.setOpenSidebar} />
-        <button onClick={() => props.setOpenSidebar(false)}>Close</button>
+        <button
+          onClick={() => props.setOpenSidebar(false)}
+          className="sidebar-btn"
+        >
+          X
+        </button>
       </div>
     </CSSTransition>
   );

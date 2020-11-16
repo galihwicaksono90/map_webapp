@@ -3,7 +3,15 @@ import kaliangetIcon from "./img/dieng/kalianget.png";
 import sendangsariIcon from "./img/dieng/sendangsari.png";
 import lengkongIcon from "./img/dieng/lengkong.png";
 import kejajarIcon from "./img/dieng/tambiKejajar.png";
-import diengMap from "./img/dieng/map.png";
+import bukitCintaIcon from "./img/dieng/bukitCinta.png";
+import serojaIcon from "./img/dieng/puncakSeroja.png";
+import dptIcon from "./img/dieng/dpt.png";
+import sikunirIcon from "./img/dieng/sikunir.png";
+import patakBantengIcon from "./img/dieng/patakBanteng.png";
+import menjerIcon from "./img/dieng/telagaMenjer.png";
+import campursariIcon from "./img/dieng/campursari.png";
+import gunungPrauIcon from "./img/dieng/gunungPrau.png";
+import diengMap from "./img/dieng/map_empty.png";
 
 const locationStore = {
   dieng: {
@@ -86,6 +94,134 @@ const locationStore = {
           position: {
             top: "40",
             left: "83",
+          },
+        },
+      },
+      bukitCinta: {
+        name: "Bukit Cinta Maron",
+        description: {
+          en:
+            " The cinta hills of the Seroja Valley offer beautiful scenery. The Seroja Valley is located above Lake Menjer and has a very natural and beautiful view. Visi- tors can see the scenery of Menjer Lake from the top of the hill. The cinta hills of this Seroja Valley are located about 12 km from the city centre of Wonosobo. Visitors can take a selfie with the background Menjer Lake, Sindoro Mountain and Kembang Mountain. In this place there is a heart-shaped photo spot made of bamboo. Visitors also can set up tents near the cinta  ",
+          in:
+            " Bukit cinta lembah seroja menawarkan pemandangan yang indah. Bukit Seroja yang lokasinya berada tepat di atas Telaga Menjer, mempunyai pesona alam yang begitu luar biasa. Seperti di wisata Bukit Sikunir, wisatawan juga dapat melihat indahnya sunrise keluar di atas Telaga Menjer. Lokasi bukit cinta lembah se- roja ini tepatnya berada di Desa maron, Kecamatan, Garung, Kabupaten Wonosobo. dan hanya berjarak kurang lebih 12 km dari Wonosobo kota. Wisatawan dapat berfoto selfie dengan latar belakang telaga men- jer gunung sindoro serta gunung kembang. Terdapat juga spot berbentuk love yang dibangun diatas pohon. Tak  hanya menyediakan pemandangan alam yang tampak cantik, wisatawan juga bisa mendirikan  tenda / camping ground di sekitar puncak bukit cinta lembah seroja. Dengan begitu Anda bisa menikmati peman- dangan matahari tenggelam (sunset) atau indahnya  ",
+        },
+        icon: {
+          image: bukitCintaIcon,
+          position: {
+            top: "43",
+            left: "44",
+          },
+        },
+      },
+      seroja: {
+        name: "Lembah Seroja",
+        description: {
+          en:
+            "The Seroja hills on the border of Maron and Tlogo villages, just above Lake Menjer. From the hills of Seroja, you can see the scenery of Menjer Lake, Sin- doro Mountain and Kembang Mountain. T he shade of trees and the green atmosphere allow visitors to rest their hearts, eyes and mind. If the weather is good, visitors can also see the scenery of Wonosobo County from the Soraja hills. Sunrise and sunset will be better to be seen from  the Seroja hills. ",
+          in:
+            "Lembah Seroja yang berlokasi di perbatasan Desa Maron dan Desa Tlogo, tepatnya di area perbukitan Telaga Menjer. Lembah Seroja menawarkan keinda- han panorama alam yang mempesona. Lukisan hidup yang berlatar lanskap Telaga Menjer, Gunung Sindoro, dan Gunung Kembang akan membuat Anda terkesima dan jatuh cinta. Nuansa hijau yang asri dan teduh ini bisa memanjakan mata, hati, dan pikiran Anda. Kalau datang ke sini saat kondisi cuaca sedang bagus, pe- mandangan Kota Wonosobo akan terlihat jelas dari bukit ini. Dan bagi kalian yang suka berburu sunrise atau sunset juga pasti akan senang kalau ke sani. Se- bab, panorama matahari terbit dan terbenam akan se- makin indah ketika dilihat dari lembah Seroja. S",
+        },
+        icon: {
+          image: serojaIcon,
+          position: {
+            top: "48",
+            left: "60",
+          },
+        },
+      },
+      dpt: {
+        name: "Dieng Plateau Theater",
+        description: {
+          en:
+            "Dieng Plateau Theather is a must visited place when come to dieng plateu. This place will give in- formation about dieng plateu at a glace. In room with 100 person capacity,  visitors will be presented with movie about Dieng Plateu from the history, geography conditition, culture, etc. Watching 23 minutes movie, visitors will  know about dieng plateu and people who lived in this area. Dieng plateu Theather operate from ",
+          in:
+            "Inilah tempat yang seharusnya menjadi tujuan perta- ma ketika tiba di Dataran Tinggi Dieng, Dieng Plateau Theater. Tempat yang diresmikan oleh Presiden Susilo Bambang Yudhoyono pada 9 April 2006 ini memberi- kan pengetahuan mengenai Dataran Tinggi Dieng. Se- tiap pengunjung akan dibawa masuk ke dalam sebuah ruang yang mampu menampung sekitar 100 orang. Di dalam ruang ini, pengunjung akan menyaksikan sebuah film tentang Dataran Tinggi Dieng, mulai dari sejarah, kondisi geografis, budaya, serta hal-hal lain. Selama 23 menit durasi film, pengunjung akan dike- nalkan pada Dataran Tinggi Dieng dan masyarakat yang bermukim di kawasan ini. Sehingga, ketika akan berkeliling menikmati pesona alam Dataran Tinggi Dieng serta mengunjungi tempat-tempat wisata yang ada di kawasan ini, pengunjung sudah memiliki bekal pengetahuan. Pengalaman berkunjung yang dilakukan pun akan menjadi lebih berkesan.Dieng Plateau The- ater beroperasi dari jam 07.00 WIB hingga sekitar jam ",
+        },
+        icon: {
+          image: dptIcon,
+          position: {
+            top: "30",
+            left: "51",
+          },
+        },
+      },
+      sikunir: {
+        name: "Sunrise Sikunir Desa Sembungan",
+        description: {
+          en:
+            "Sikunir hill is one of main atrractions of dieng. In this site, a a breathtaking view of sunrise, known phenomenally as golden sunrise can be seen. From the top of sikunir, tourists can watch five top of mountains in a row from a distance or Houses of the villagers and Cebong Lake  shrouded in haze beautifully. T he beauty of nature and its cool air combined with the kindness and warmth of the will make an unfor- getable journey. In Sembungan Village, there is also Sikarim Waterfalls which lies under the village. This waterfall has 24 metres height with Sikunir Hill as the ",
+          in:
+            "Bukit Sikunir adalah salah satu obyek wisata anda- lan Dataran Tinggi Dieng. Indahnya view sunrise dari Puncak Sikunir yang dikenal dengan Golden Sun- rise Sikunir yang fenomenal. Rumah-rumah penduduk dan Telaga Cebong yang diselimuti kabut tipis terlihat indah dari Puncak Sikunir. Ditambah keramahan dan kehangatan penduduk desa yang akan membuat wisa- tawan betah berwisata ke Sikunir. Di desa sembungan juga terpadat air terjun sikarim yang terletak di bawah Desa Sembungan. Air Terjun Sikarim memiliki keting- gian 24 meter dengan  latar belakang bukit Sikunir yang  menjulang dan banyak ditumbuhi  perdu  dan  ",
+        },
+        icon: {
+          image: sikunirIcon,
+          position: {
+            top: "33",
+            left: "20",
+          },
+        },
+      },
+      patakBanteng: {
+        name: "Sunrise Sikunir Desa Sembungan",
+        description: {
+          en:
+            "The Village of Campursari is located in the Kejajar Sub district in the western part of Bismo Mountain. Some of the tourist resorts in Campursari are the Ko- pen Hill, Tirta terapi Spa, Sikrasak Waterfall, Silamp- or Waterfall, Sijleber Waterfall, Sikuwung Waterfall, Sigrinjing Waterfall, and Bismo Mountain. T here are also beautiful sunrises in Bismo Mountain and the scenery of Wonosobo County from the top of Bismo mountains. Visitors can see some mountains, such as Sindoro Mountain, sumbing Mountain, and ",
+          in:
+            "Gunung Prau terletak di kawasan dataran tinggi Di- eng, Kabupaten Wonosobo, Desa Patakbanteng dengan ketinggian 2.565 Mpdl. Dengan jalur pen- dakian yang relatif mudah dan cukup jelas bagi para pendaki serta view yang istimewa menjadikan Gunung Prau menjadi gunung favorit bagi para pendaki saat ini. Untuk mendaki Puncak Gunung Prau, pendaki hanya membutuhkan sekitar 3-4 jam trekking. Dari puncak Gunung Prau pendaki dapat menikmati pemandangan serba cantik di antaranya hamparan keindahan bukit teletubbies dan bunga yang sangat menawan. Tak ha- nya itu, kita juga dapat menyaksikan keindahan jaja- ran Gunung Sumbing, Sindoro, Merapi, Merbabu, dan Slamet. Puncak Gunung Prau sering dijadikan tempat untuk hunting spot Golden Sunrise yang terbukti spek- takuler.Gunung Prau dapat menjadi destinasi utama kalian untuk menikmati keindahan alam dari keting- gian. Pendaki akan dibuat jatuh hati melihat Telaga Warna Dieng dari ketinggian, hamparan bunga dan ",
+        },
+        icon: {
+          image: patakBantengIcon,
+          position: {
+            top: "12",
+            left: "53",
+          },
+        },
+      },
+      menjer: {
+        name: "Telaga Menjer",
+        description: {
+          en:
+            "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
+          in:
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl. ",
+        },
+        icon: {
+          image: menjerIcon,
+          position: {
+            top: "58",
+            left: "42",
+          },
+        },
+      },
+      campursari: {
+        name: "Desa Wisata Campursari",
+        description: {
+          en:
+            "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
+          in:
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl. ",
+        },
+        icon: {
+          image: campursariIcon,
+          position: {
+            top: "12",
+            left: "17",
+          },
+        },
+      },
+      gunungPrau: {
+        name: "Gunung Prau",
+        description: {
+          en:
+            "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
+          in:
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl. ",
+        },
+        icon: {
+          image: gunungPrauIcon,
+          position: {
+            top: "9",
+            left: "78",
           },
         },
       },

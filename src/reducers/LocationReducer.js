@@ -5,6 +5,12 @@ const LocationReducer = (state, { type, payload }) => {
         ...state,
         currentAttraction: state.currentLocation.attractions[payload],
       };
+    case "clearCurrentAttraction":
+      return {
+        ...state,
+        currentAttraction: {},
+      };
+
     default:
       return state;
   }

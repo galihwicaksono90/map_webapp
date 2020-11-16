@@ -1,5 +1,5 @@
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 400px;
@@ -12,49 +12,16 @@
 .sidebar-content {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
+  text-align: justify;
 }
 
-.fade-sidebar-enter {
-  opacity: 0;
-  transform: translateX(100%);
-}
-.fade-sidebar-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.fade-sidebar-exit {
-  opacity: 1;
-  transform: translateX(0);
-}
-.fade-sidebar-exit-active {
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-.fade-sidebar-exit-active,
-.fade-sidebar-enter-active {
-  transition: opacity var(--speed) ease, transform var(--speed) ease;
-}
-.fade-sidebar-content-enter {
-  opacity: 0;
-  transform: translateY(20px);
-}
-.fade-sidebar-content-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-}
-.fade-sidebar-content-exit {
-  opacity: 1;
-  transform: translateY(0);
-}
-.fade-sidebar-content-exit-active {
-  opacity: 0;
-  transform: translateY(-20px);
-}
-
-.fade-sidebar-content-exit-active,
-.fade-sidebar-content-enter-active {
-  transition: opacity var(--speed) ease-in, transform var(--speed) ease;
+.sidebar-btn {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 2rem;
 }

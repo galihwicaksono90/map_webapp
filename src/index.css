@@ -1,5 +1,7 @@
 :root {
   --speed: 500ms;
+  --color-white: #ebdbb2;
+  --color-black: #282828;
 }
 
 body {
@@ -29,4 +31,49 @@ h5 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* ------------------- CSSTransitionGroup ----------------------- */
+.fade-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.fade-exit-active,
+.fade-enter-active {
+  transition: opacity var(--speed) ease, transform var(--speed) ease;
+}
+.fade-content-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fade-content-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-content-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-content-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-content-exit-active,
+.fade-content-enter-active {
+  transition: opacity var(--speed) ease-in, transform var(--speed) ease;
 }
