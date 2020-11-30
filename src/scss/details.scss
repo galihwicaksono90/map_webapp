@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.details {
+  box-sizing: border-box;
+  height: 95%;
+  width: 95%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  z-index: 10;
+  padding: 50px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  box-shadow: $box-shadow-2;
+}
+
+.details-top {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

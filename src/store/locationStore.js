@@ -11,6 +11,8 @@ import patakBantengIcon from "./img/dieng/patakBanteng.png";
 import menjerIcon from "./img/dieng/telagaMenjer.png";
 import campursariIcon from "./img/dieng/campursari.png";
 import gunungPrauIcon from "./img/dieng/gunungPrau.png";
+import curugSikarimIcon from "./img/dieng/curugSikarim.png";
+import candiDiengIcon from "./img/dieng/candiDieng.png";
 import diengMap from "./img/dieng/map_empty.png";
 
 const locationStore = {
@@ -32,6 +34,22 @@ const locationStore = {
             left: "15",
           },
         },
+        popup: {
+          position: {
+            top: "80",
+            left: "3",
+          },
+        },
+        details: {
+          address: "Jl Mangli 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "mangli@dieng.com",
+          twitter: "@mangli-twitter",
+          instagram: "@mangli-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "pool",
       },
       kalianget: {
         name: "Pemandian Air Panas Kalianget",
@@ -48,6 +66,22 @@ const locationStore = {
             left: "41",
           },
         },
+        popup: {
+          position: {
+            top: "76",
+            left: "29",
+          },
+        },
+        details: {
+          address: "Jl Kalianget 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Kalianget@dieng.com",
+          twitter: "@Kalianget-twitter",
+          instagram: "@Kalianget-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "bath",
       },
       sendangsari: {
         name: "Desa Wisata Sendangsari",
@@ -64,6 +98,22 @@ const locationStore = {
             left: "77",
           },
         },
+        popup: {
+          position: {
+            top: "79",
+            left: "65",
+          },
+        },
+        details: {
+          address: "Jl Sendangsari 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Sendangsari@dieng.com",
+          twitter: "@Sendangsari-twitter",
+          instagram: "@Sendangsari-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "river",
       },
       lengkong: {
         name: "Paralayang Lengkong",
@@ -80,6 +130,22 @@ const locationStore = {
             left: "85",
           },
         },
+        popup: {
+          position: {
+            top: "56",
+            left: "72",
+          },
+        },
+        details: {
+          address: "Jl Lengkong 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Lengkong@dieng.com",
+          twitter: "@Lengkong-twitter",
+          instagram: "@Lengkong-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "paragliding",
       },
       kejajar: {
         name: "Tambi Kejajar",
@@ -96,6 +162,22 @@ const locationStore = {
             left: "83",
           },
         },
+        popup: {
+          position: {
+            top: "46",
+            left: "71",
+          },
+        },
+        details: {
+          address: "Jl Kejajar 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Kejajar@dieng.com",
+          twitter: "@Kejajar-twitter",
+          instagram: "@Kejajar-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "forest",
       },
       bukitCinta: {
         name: "Bukit Cinta Maron",
@@ -112,6 +194,22 @@ const locationStore = {
             left: "44",
           },
         },
+        popup: {
+          position: {
+            top: "48",
+            left: "33",
+          },
+        },
+        details: {
+          address: "Jl  150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "@dieng.com",
+          twitter: "@-twitter",
+          instagram: "@-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "mountain",
       },
       seroja: {
         name: "Lembah Seroja",
@@ -128,6 +226,22 @@ const locationStore = {
             left: "60",
           },
         },
+        popup: {
+          position: {
+            top: "54",
+            left: "48",
+          },
+        },
+        details: {
+          address: "Jl Seroja 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Seroja@dieng.com",
+          twitter: "@Seroja-twitter",
+          instagram: "@Seroja-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "hill",
       },
       dpt: {
         name: "Dieng Plateau Theater",
@@ -144,6 +258,22 @@ const locationStore = {
             left: "51",
           },
         },
+        popup: {
+          position: {
+            top: "36",
+            left: "35",
+          },
+        },
+        details: {
+          address: "Jl DPT 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "DPT@dieng.com",
+          twitter: "@DPT-twitter",
+          instagram: "@DPT-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "movies",
       },
       sikunir: {
         name: "Sunrise Sikunir Desa Sembungan",
@@ -160,9 +290,25 @@ const locationStore = {
             left: "20",
           },
         },
+        popup: {
+          position: {
+            top: "39",
+            left: "6",
+          },
+        },
+        details: {
+          address: "Jl Sukunir 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Sukunir@dieng.com",
+          twitter: "@Sukunir-twitter",
+          instagram: "@Sukunir-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "mountain",
       },
       patakBanteng: {
-        name: "Sunrise Sikunir Desa Sembungan",
+        name: "Puncak Sikunir via Patak Banteng",
         description: {
           en:
             "The Village of Campursari is located in the Kejajar Sub district in the western part of Bismo Mountain. Some of the tourist resorts in Campursari are the Ko- pen Hill, Tirta terapi Spa, Sikrasak Waterfall, Silamp- or Waterfall, Sijleber Waterfall, Sikuwung Waterfall, Sigrinjing Waterfall, and Bismo Mountain. T here are also beautiful sunrises in Bismo Mountain and the scenery of Wonosobo County from the top of Bismo mountains. Visitors can see some mountains, such as Sindoro Mountain, sumbing Mountain, and ",
@@ -176,6 +322,22 @@ const locationStore = {
             left: "53",
           },
         },
+        popup: {
+          position: {
+            top: "18",
+            left: "41",
+          },
+        },
+        details: {
+          address: "Jl PatakBanteng 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "PatakBanteng@dieng.com",
+          twitter: "@PatakBanteng-twitter",
+          instagram: "@PatakBanteng-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "mountain",
       },
       menjer: {
         name: "Telaga Menjer",
@@ -192,6 +354,22 @@ const locationStore = {
             left: "42",
           },
         },
+        popup: {
+          position: {
+            top: "64",
+            left: "31",
+          },
+        },
+        details: {
+          address: "Jl Menjer 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Menjer@dieng.com",
+          twitter: "@Menjer-twitter",
+          instagram: "@Menjer-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "lake",
       },
       campursari: {
         name: "Desa Wisata Campursari",
@@ -208,6 +386,22 @@ const locationStore = {
             left: "17",
           },
         },
+        popup: {
+          position: {
+            top: "18",
+            left: "5",
+          },
+        },
+        details: {
+          address: "Jl Campursari 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "campursari@dieng.com",
+          twitter: "@campursari-twitter",
+          instagram: "@campursari-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "village",
       },
       gunungPrau: {
         name: "Gunung Prau",
@@ -224,6 +418,86 @@ const locationStore = {
             left: "78",
           },
         },
+        popup: {
+          position: {
+            top: "15",
+            left: "65",
+          },
+        },
+        details: {
+          address: "jl Gunung Prau 150 asdf wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Gunung Prau@dieng.com",
+          twitter: "@Gunung Prau-twitter",
+          instagram: "@Gunung Prau-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "mountain",
+      },
+      curugSikarim: {
+        name: "Curug Sikarim",
+        description: {
+          en:
+            "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
+          in:
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl. ",
+        },
+        icon: {
+          image: curugSikarimIcon,
+          position: {
+            top: "54",
+            left: "18",
+          },
+        },
+        popup: {
+          position: {
+            top: "61",
+            left: "8",
+          },
+        },
+        details: {
+          address: "Jl Sikarim 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Sikarim@dieng.com",
+          twitter: "@Sikarim-twitter",
+          instagram: "@Sikarim-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "waterfall",
+      },
+      candi: {
+        name: "Candi Dieng",
+        description: {
+          en:
+            "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
+          in:
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl. ",
+        },
+        icon: {
+          image: candiDiengIcon,
+          position: {
+            top: "23",
+            left: "36",
+          },
+        },
+        popup: {
+          position: {
+            top: "29",
+            left: "24",
+          },
+        },
+        details: {
+          address: "Jl Candi Dieng 150 asdf Wonosobo",
+          openHour: "08.00 - 20.00",
+          phone: "0812-1234-1234",
+          email: "Candi Dieng@dieng.com",
+          twitter: "@Candi Dieng-twitter",
+          instagram: "@Candi Dieng-insta",
+          gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+        },
+        term: "temple",
       },
     },
   },

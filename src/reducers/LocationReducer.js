@@ -5,10 +5,10 @@ const LocationReducer = (state, { type, payload }) => {
         ...state,
         currentAttraction: state.currentLocation.attractions[payload],
       };
-    case "clearCurrentAttraction":
+    case "changeCurrentLanguage":
       return {
         ...state,
-        currentAttraction: {},
+        currentLanguage: payload,
       };
 
     default:

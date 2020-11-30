@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LocationContext } from "../contexts/LocationContext";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
-import "./css/sidebar.css";
+import "../scss/sidebar.scss";
 
 const duration = 500;
 const SidebarContent = (props) => {

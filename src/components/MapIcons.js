@@ -27,7 +27,12 @@ const MapIcons = ({
       {availableAttractions.map((attraction, index) => (
         <li
           key={attraction}
-          className={`mainmap-icon ${attraction}-icon`}
+          className={`mainmap-icon ${attraction}-icon ${
+            currentAttraction.name ===
+              currentLocation.attractions[attraction].name && popupOpen
+              ? "mainmap-icon-active"
+              : ""
+          }`}
           style={iconStyle(attraction)}
           onClick={() => popupHandler(attraction)}
         >

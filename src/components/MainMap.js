@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import PopupMenu from "./PopupMenu";
 import MapIcons from "./MapIcons";
 import { LocationContext } from "../contexts/LocationContext";
-import "./css/mainmap.css";
+import "../scss/mainmap.scss";
 
 const MainMap = (props) => {
   const { locationState, locationDispatch } = useContext(LocationContext);
@@ -16,9 +16,12 @@ const MainMap = (props) => {
 
   return (
     <div className="mainmap">
-      <h1>{currentAttraction.name}</h1>
-      <button onClick={() => setPopupOpen(!popupOpen)}>Popup</button>
-      <img className="mainmap-image" alt="" src={currentLocation.mapImage} />
+      <img
+        className="mainmap-image"
+        alt=""
+        src={currentLocation.mapImage}
+        onClick={() => setPopupOpen(false)}
+      />
       <MapIcons
         currentLocation={currentLocation}
         availableAttractions={availableAttractions}
@@ -31,6 +34,8 @@ const MainMap = (props) => {
         currentAttraction={currentAttraction}
         currentLanguage={currentLanguage}
         popupOpen={popupOpen}
+        setPopupOpen={setPopupOpen}
+        setOpenDetails={props.setOpenDetails}
       />
     </div>
   );

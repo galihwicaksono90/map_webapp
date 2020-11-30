@@ -1,6 +1,8 @@
+@import "variables.scss";
+
 .mainmap {
   position: relative;
-  background: #282828;
+  background: $black;
 }
 
 .mainmap-image {
@@ -17,10 +19,17 @@
   transform: scale(1) translate(-50%, -50%);
   transform-origin: top left;
   transition: transform 300ms ease;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.mainmap-icon-active {
+  transform: scale($scale-up) translate(-50%, -50%);
 }
 
 .mainmap-icon:hover {
-  transform: scale(1.1) translate(-50%, -50%);
+  transform: scale($scale-up) translate(-50%, -50%);
   transform-origin: top left;
   transition: transform 300ms ease;
 }

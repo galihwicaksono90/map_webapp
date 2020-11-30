@@ -1,43 +1,42 @@
-import React from "react";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
-import "./css/popupmenu.css";
+import PopupContent from "./PopupContent";
+import "../scss/popupmenu.scss";
 
-const PopupContent = (props) => {
-  return (
-    <div className="popup-content">
-      <h2>{props.currentAttraction.name}</h2>
-      <br />
-      <p>{props.currentAttraction.description[props.currentLanguage]}</p>
-      <br />
-      <p>More Details...</p>
-    </div>
-  );
-};
-
-const PopupMenu = ({ currentAttraction, currentLanguage, popupOpen }) => {
+const PopupMenu = ({
+  currentAttraction,
+  currentLanguage,
+  popupOpen,
+  setPopupOpen,
+  setOpenDetails,
+}) => {
   const popupStyle = () => {
     return {
-      top: currentAttraction.icon.position.top + "%",
-      left: currentAttraction.icon.position.left + "%",
+      top: currentAttraction.popup.position.top + "%",
+      left: currentAttraction.popup.position.left + "%",
     };
   };
   return (
     <CSSTransition
       in={popupOpen}
       timeout={500}
-      classNames="fade-content"
+      classNames="fade-in"
       unmountOnExit
     >
       <SwitchTransition>
         <CSSTransition
+          in={popupOpen}
           key={currentAttraction.name}
           timeout={500}
-          classNames="fade-content"
+          classNames="fade-in"
         >
-          <div className="popup-menu" style={popupStyle(currentAttraction)}>
+          <div
+            className="popup-menu rounded-corner"
+            style={popupStyle(currentAttraction)}
+          >
             <PopupContent
               currentAttraction={currentAttraction}
               currentLanguage={currentLanguage}
+              setOpenDetails={setOpenDetails}
             />
           </div>
         </CSSTransition>
