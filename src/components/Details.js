@@ -1,5 +1,6 @@
 import DetailsHeader from "./DetailsHeader";
 import DetailsContent from "./DetailsContent";
+import DetailsBackground from "./DetailsBackground";
 import GallerySmall from "./GallerySmall";
 import { useContext } from "react";
 import CloseButton from "./CloseButton";
@@ -25,8 +26,9 @@ const Details = ({ openDetails, setOpenDetails }) => {
           <CloseButton setState={setOpenDetails} state={openDetails} />
           <DetailsContent currentAttraction={currentAttraction} />
         </div>
-        <GallerySmall />
+        <GallerySmall term={currentAttraction.term} />
       </div>
+      {/* <DetailsBackground /> */}
     </CSSTransition>
   );
 };

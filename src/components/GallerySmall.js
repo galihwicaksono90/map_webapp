@@ -2,9 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import LoadingSpinner from "./LoadingSpinner";
 import "../scss/gallerySmall.scss";
 
-// const url = `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&image_type=photo&page=${page}&per_page=4`;
+// `https:picsum.photos/v2/list?page=3&limit=6`
+// const url = `https:pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&image_type=photo&q={term}page=1&per_page=6`;
 
-const GallerySmall = ({ tag = "mountain" }) => {
+const GallerySmall = ({ term = "mountain" }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [images, setImages] = useState([]);
   const asdfRef = useRef();
@@ -12,14 +13,14 @@ const GallerySmall = ({ tag = "mountain" }) => {
   // useEffect(() => {
   //   const fetchData = async () => {
   //     const res = await fetch(
-  //       `https://picsum.photos/v2/list?page=3&limit=6`
-  //     ).then.catch((err) => console.log(err));
+  //       `https:pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&image_type=photo&q={term}page=1&per_page=6`
+  //     ).catch((err) => console.log(err));
   //     const data = await res.json();
   //     setImages(data);
   //     setIsLoading(false);
   //   };
   //   fetchData();
-  // }, []);
+  // }, [term]);
 
   return (
     <div className="gallery-container">

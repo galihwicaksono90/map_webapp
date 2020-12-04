@@ -6,12 +6,10 @@ const MapIcons = ({
   setPopupOpen,
   currentAttraction,
 }) => {
-  const iconStyle = (attraction) => {
-    return {
-      top: currentLocation.attractions[attraction].icon.position.top + "%",
-      left: currentLocation.attractions[attraction].icon.position.left + "%",
-    };
-  };
+  const iconStyle = (attraction) => ({
+    top: currentLocation.attractions[attraction].icon.position.top + "%",
+    left: currentLocation.attractions[attraction].icon.position.left + "%",
+  });
   const popupHandler = (attraction) => {
     currentAttraction === currentLocation.attractions[attraction] && popupOpen
       ? setPopupOpen(false)
