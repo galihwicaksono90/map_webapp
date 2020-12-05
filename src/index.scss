@@ -52,8 +52,17 @@ code {
 }
 
 .fade-in-exit-active,
-.fade-in-enter-active {
+.fade-in-enter-active,
+.fade-in-appear-done {
   transition: opacity $speed-fast ease-in, transform $speed-fast ease;
+}
+.fade-in-appear {
+  opacity: 0;
+  transform: transateY(20px);
+}
+.fade-in-appear-done {
+  opacity: 1;
+  transform: transateY(0);
 }
 
 .slide-in-enter {

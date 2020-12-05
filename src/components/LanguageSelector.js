@@ -10,6 +10,7 @@ const LanguageSelector = () => {
     <div className="languageselector">
       {availableLanguages.map((language, index) => (
         <button
+          key={index}
           className={currentLanguage === language ? "btn-active" : ""}
           onClick={() =>
             locationDispatch({

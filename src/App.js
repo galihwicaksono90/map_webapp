@@ -2,20 +2,26 @@ import { useState } from "react";
 import { LocationProvider } from "./contexts/LocationContext";
 import LocationSelector from "./components/LocationSelector";
 import MainMap from "./components/MainMap";
+import LoadingSpinner from "./components/LoadingSpinner";
 import Details from "./components/Details";
-import LanguageSelector from "./components/LanguageSelector";
+// import LanguageSelector from "./components/LanguageSelector";
 
 function App() {
   const [openDetails, setOpenDetails] = useState(false);
-  const [map, setMap] = useState("dieng");
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <LocationProvider>
       <div className="App">
-        <LocationSelector map={map} setMap={setMap} />
-        <MainMap openDetails={openDetails} setOpenDetails={setOpenDetails} />
+        {isLoading && (
+          <LocationSelector setIsLoading={(state) => setIsLoading(state)} />
+        )}
+        {isLoading ? (
+          <LoadingSpinner />
+        ) : (
+          <MainMap openDetails={openDetails} setOpenDetails={setOpenDetails} />
+        )}
         <Details openDetails={openDetails} setOpenDetails={setOpenDetails} />
-        <LanguageSelector />
       </div>
     </LocationProvider>
   );

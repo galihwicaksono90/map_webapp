@@ -1,28 +1,12 @@
 import React, { createContext, useReducer } from "react";
-import locationStore from "../store/locationStore";
 import LocationReducer from "../reducers/LocationReducer";
 
-// default location variable
-const defaultLocation = "wadaslintang";
+// append array to add available locations
+const defaultAvailableLocations = ["dieng", "wadaslintang"];
 
 const locationContextDefaultValue = {
-  locationStore: locationStore,
-  get availableLocations() {
-    if (
-      Object.keys(this.locationStore).length === 0 &&
-      this.locationStore.constructor === Object
-    )
-      return [];
-    return Object.keys(this.locationStore);
-  },
-  get currentLocation() {
-    if (
-      Object.keys(this.locationStore).length === 0 &&
-      this.locationStore.constructor === Object
-    )
-      return {};
-    return this.locationStore[defaultLocation];
-  },
+  currentLocation: {},
+  availableLocations: defaultAvailableLocations,
   get availableAttractions() {
     if (
       Object.keys(this.currentLocation).length === 0 &&
@@ -34,7 +18,7 @@ const locationContextDefaultValue = {
   get currentAttraction() {
     if (
       Object.keys(this.currentLocation).length === 0 &&
-      this.locationStore.constructor === Object
+      this.currentLocation.constructor === Object
     )
       return {};
     return this.currentLocation.attractions[this.availableAttractions[0]];

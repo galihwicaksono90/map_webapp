@@ -1,18 +1,23 @@
-const LocationReducer = (
-  state, // = locationContextDefaultValue
-  { type, payload }
-) => {
+const LocationReducer = (state, { type, payload }) => {
   switch (type) {
     case "changeCurrentLocation":
       return {
         ...state,
-        get currentLocation() {
-          return this.locationStore[payload];
-        },
+        currentLocation: payload,
         get availableAttractions() {
+          if (
+            Object.keys(this.currentLocation).length === 0 &&
+            this.currentLocation.constructor === Object
+          )
+            return [];
           return Object.keys(this.currentLocation.attractions);
         },
         get currentAttraction() {
+          if (
+            Object.keys(this.currentLocation).length === 0 &&
+            this.currentLocation.constructor === Object
+          )
+            return {};
           return this.currentLocation.attractions[this.availableAttractions[0]];
         },
       };

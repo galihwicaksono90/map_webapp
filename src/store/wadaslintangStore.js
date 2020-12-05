@@ -5,7 +5,7 @@ import lubangSewuIcon from "./img/wadaslintang/lubangSewu.png";
 import panerusanIcon from "./img/wadaslintang/panerusan.png";
 import sumberejoIcon from "./img/wadaslintang/sumberejo.png";
 import sumogedeIcon from "./img/wadaslintang/sumogede.png";
-import wadaslintangMap from "./img/wadaslintang/map-empty.png";
+import wadaslintangMap from "./img/wadaslintang/map_empty.png";
 
 const wadaslintangStore = {
   name: "wadaslintang",
