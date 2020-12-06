@@ -1,4 +1,8 @@
-import { SwitchTransition, CSSTransition } from "react-transition-group";
+import {
+  SwitchTransition,
+  CSSTransition,
+  TransitionGroup,
+} from "react-transition-group";
 import PopupContent from "./PopupContent";
 import "../scss/popupmenu.scss";
 
@@ -19,12 +23,12 @@ const PopupMenu = ({
     <CSSTransition
       in={popupOpen}
       timeout={500}
-      classNames="fade-in"
+      classNames="popup"
       unmountOnExit
     >
-      <SwitchTransition>
+      <TransitionGroup component="div">
         <CSSTransition
-          in={popupOpen}
+          /* in={popupOpen} */
           key={currentAttraction.name}
           timeout={500}
           classNames="fade-in"
@@ -40,7 +44,7 @@ const PopupMenu = ({
             />
           </div>
         </CSSTransition>
-      </SwitchTransition>
+      </TransitionGroup>
     </CSSTransition>
   );
 };

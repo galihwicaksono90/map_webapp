@@ -9,18 +9,21 @@ import Details from "./components/Details";
 function App() {
   const [openDetails, setOpenDetails] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [locationSelectorShow, setLocationSelectorShow] = useState(true);
 
   return (
     <LocationProvider>
       <div className="App">
-        {isLoading && (
-          <LocationSelector setIsLoading={(state) => setIsLoading(state)} />
-        )}
-        {isLoading ? (
-          <LoadingSpinner />
-        ) : (
-          <MainMap openDetails={openDetails} setOpenDetails={setOpenDetails} />
-        )}
+        <LocationSelector
+          setIsLoading={(state) => setIsLoading(state)}
+          locationSelectorShow={locationSelectorShow}
+          setLocationSelectorShow={setLocationSelectorShow}
+        />
+        <MainMap
+          openDetails={openDetails}
+          setOpenDetails={setOpenDetails}
+          isLoading={isLoading}
+        />
         <Details openDetails={openDetails} setOpenDetails={setOpenDetails} />
       </div>
     </LocationProvider>

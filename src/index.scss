@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: $white;
   font-size: 16px;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -34,59 +35,80 @@ code {
 
 /* ------------------- CSSTransitionGroup ----------------------- */
 
-.fade-in-enter {
-  opacity: 0;
-  transform: translateY(20px);
-}
-.fade-in-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-}
-.fade-in-exit {
-  opacity: 1;
-  transform: translateY(0);
-}
-.fade-in-exit-active {
-  opacity: 0;
-  transform: translateY(20px);
+.fade-in {
+  &-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  &-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  &-appear {
+    opacity: 0;
+    transform: transateY(20px);
+  }
+  &-appear-done {
+    opacity: 1;
+    transform: transateY(0);
+  }
+
+  &-exit-active,
+  &-enter-active,
+  &-appear-done {
+    transition: opacity $speed-fast ease-in, transform $speed-fast ease;
+  }
 }
 
-.fade-in-exit-active,
-.fade-in-enter-active,
-.fade-in-appear-done {
-  transition: opacity $speed-fast ease-in, transform $speed-fast ease;
-}
-.fade-in-appear {
-  opacity: 0;
-  transform: transateY(20px);
-}
-.fade-in-appear-done {
-  opacity: 1;
-  transform: transateY(0);
+.slide-in {
+  &-enter {
+    opacity: 0;
+    transform: translate(50%, 50%);
+  }
+  &-enter-active {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transform: translate(50%, 50%);
+  }
+
+  &-exit-active,
+  &-enter-active {
+    transition: opacity $speed-fast ease, transform $speed-fast ease;
+  }
 }
 
-.slide-in-enter {
-  opacity: 0;
-  transform: translate(50%, 50%);
-}
-.slide-in-enter-active {
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
-
-.slide-in-exit {
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
-
-.slide-in-exit-active {
-  opacity: 0;
-  transform: translate(50%, 50%);
-}
-
-.slide-in-exit-active,
-.slide-in-enter-active {
-  transition: opacity $speed-fast ease, transform $speed-fast ease;
+.popup {
+  &-enter {
+    opacity: 0;
+  }
+  &-enter-active {
+    opacity: 1;
+    transition: opacity $speed-fast ease-in-out;
+  }
+  &-exit {
+    opacity: 1;
+  }
+  &-exit-active {
+    opacity: 0;
+    transition: opacity $speed-fast ease-in-out;
+  }
 }
 
 .btn-close {
