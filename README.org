@@ -1,0 +1,6 @@
+* TODO Fix map icons position
+* TODO Add Kertek and Selomerto Map Data
+* TODO Wire up Details component to router
+* TODO Fix Small Gallery Component
+* TODO Add navbar and footer
+* TODO 

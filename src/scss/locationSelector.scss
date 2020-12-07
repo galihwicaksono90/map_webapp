@@ -76,11 +76,16 @@
       transition: opacity $speed-fast ease-in-out;
     }
 
-    & h1 {
+    & h1,
+    a {
       color: $black;
+      background-color: $white;
+      padding: 1rem;
+      border-radius: 25px;
     }
   }
-  & h1 {
+  & h1,
+  a {
     color: $white;
     text-transform: uppercase;
   }

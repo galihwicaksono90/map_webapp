@@ -1,12 +1,13 @@
-import React, { useContext, useState } from "react";
-import PopupMenu from "./PopupMenu";
-import MapIcons from "./MapIcons";
+import { useContext, useState } from "react";
 import { LocationContext } from "../contexts/LocationContext";
 import { CSSTransition } from "react-transition-group";
-import "../scss/mainmap.scss";
+import MapIcons from "./MapIcons";
+import PopupMenu from "./PopupMenu";
 import LoadingSpinner from "./LoadingSpinner";
+import useLoadLocation from "../hooks/useLoadLocation";
+import "../scss/mainmap.scss";
 
-const MainMap = ({ openDetails, setOpenDetails, isLoading }) => {
+const MainMap = ({ match }) => {
   const { locationState, locationDispatch } = useContext(LocationContext);
   const {
     currentLocation,
@@ -14,7 +15,10 @@ const MainMap = ({ openDetails, setOpenDetails, isLoading }) => {
     availableAttractions,
     currentLanguage,
   } = locationState;
+  const [isLoading, setIsLoading] = useState(true);
   const [popupOpen, setPopupOpen] = useState(false);
+
+  useLoadLocation(locationDispatch, match.params.location, setIsLoading);
 
   return (
     <>
@@ -48,7 +52,7 @@ const MainMap = ({ openDetails, setOpenDetails, isLoading }) => {
               currentLanguage={currentLanguage}
               popupOpen={popupOpen}
               setPopupOpen={setPopupOpen}
-              setOpenDetails={setOpenDetails}
+              /* setOpenDetails={setOpenDetails} */
             />
           </div>
         </CSSTransition>

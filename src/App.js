@@ -1,30 +1,43 @@
 import { useState } from "react";
 import { LocationProvider } from "./contexts/LocationContext";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import LocationSelector from "./components/LocationSelector";
 import MainMap from "./components/MainMap";
-import LoadingSpinner from "./components/LoadingSpinner";
-import Details from "./components/Details";
-// import LanguageSelector from "./components/LanguageSelector";
 
+const ErrorPage = () => <h1>404 not Found</h1>;
 function App() {
-  const [openDetails, setOpenDetails] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [openDetails, setOpenDetails] = useState(false);
   const [locationSelectorShow, setLocationSelectorShow] = useState(true);
+  const locationArray = ["dieng", "wadaslintang"];
+
+  const checkIfLocationExist = (location) => {
+    if (locationArray.includes(location)) return true;
+  };
 
   return (
     <LocationProvider>
       <div className="App">
-        <LocationSelector
-          setIsLoading={(state) => setIsLoading(state)}
-          locationSelectorShow={locationSelectorShow}
-          setLocationSelectorShow={setLocationSelectorShow}
-        />
-        <MainMap
-          openDetails={openDetails}
-          setOpenDetails={setOpenDetails}
-          isLoading={isLoading}
-        />
-        <Details openDetails={openDetails} setOpenDetails={setOpenDetails} />
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <LocationSelector
+                locationSelectorShow={locationSelectorShow}
+                setLocationSelectorShow={setLocationSelectorShow}
+              />
+            </Route>
+            <Route
+              path="/location/:location"
+              render={({ match }) => {
+                if (checkIfLocationExist(match.params.location)) {
+                  return <MainMap match={match} />;
+                } else {
+                  return <ErrorPage />;
+                }
+              }}
+            />
+            <Route path="/" component={ErrorPage} />
+          </Switch>
+        </Router>
       </div>
     </LocationProvider>
   );
