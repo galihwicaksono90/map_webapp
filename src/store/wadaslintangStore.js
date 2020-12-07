@@ -1,6 +1,6 @@
 import bendunganIcon from "./img/wadaslintang/bendungan.png";
 import kumejingIcon from "./img/wadaslintang/kumejing.png";
-import lancarIcon from "./img/wadaslintang/kumejing.png";
+import lancarIcon from "./img/wadaslintang/lancar.png";
 import lubangSewuIcon from "./img/wadaslintang/lubangSewu.png";
 import panerusanIcon from "./img/wadaslintang/panerusan.png";
 import sumberejoIcon from "./img/wadaslintang/sumberejo.png";
@@ -24,13 +24,13 @@ const wadaslintangStore = {
         image: bendunganIcon,
         position: {
           top: "70",
-          left: "30",
+          left: "29",
         },
       },
       popup: {
         position: {
-          top: "75",
-          left: "20",
+          top: "85",
+          left: "29",
         },
       },
       details: {
@@ -56,14 +56,14 @@ const wadaslintangStore = {
       icon: {
         image: kumejingIcon,
         position: {
-          top: "50",
-          left: "50",
+          top: "26",
+          left: "19",
         },
       },
       popup: {
         position: {
-          top: "50",
-          left: "50",
+          top: "41",
+          left: "19",
         },
       },
       details: {
@@ -89,14 +89,14 @@ const wadaslintangStore = {
       icon: {
         image: lancarIcon,
         position: {
-          top: "50",
-          left: "50",
+          top: "10",
+          left: "18",
         },
       },
       popup: {
         position: {
-          top: "50",
-          left: "50",
+          top: "25",
+          left: "18",
         },
       },
       details: {
@@ -122,14 +122,14 @@ const wadaslintangStore = {
       icon: {
         image: lubangSewuIcon,
         position: {
-          top: "50",
-          left: "50",
+          top: "46",
+          left: "80",
         },
       },
       popup: {
         position: {
-          top: "50",
-          left: "50",
+          top: "61",
+          left: "80",
         },
       },
       details: {
@@ -155,14 +155,14 @@ const wadaslintangStore = {
       icon: {
         image: panerusanIcon,
         position: {
-          top: "50",
-          left: "50",
+          top: "33",
+          left: "88",
         },
       },
       popup: {
         position: {
-          top: "50",
-          left: "50",
+          top: "48",
+          left: "88",
         },
       },
       details: {
@@ -188,14 +188,14 @@ const wadaslintangStore = {
       icon: {
         image: sumberejoIcon,
         position: {
-          top: "50",
-          left: "50",
+          top: "62",
+          left: "81",
         },
       },
       popup: {
         position: {
-          top: "50",
-          left: "50",
+          top: "77",
+          left: "81",
         },
       },
       details: {
@@ -221,14 +221,14 @@ const wadaslintangStore = {
       icon: {
         image: sumogedeIcon,
         position: {
-          top: "50",
-          left: "50",
+          top: "7.5",
+          left: "44",
         },
       },
       popup: {
         position: {
-          top: "50",
-          left: "50",
+          top: "22.5",
+          left: "44",
         },
       },
       details: {

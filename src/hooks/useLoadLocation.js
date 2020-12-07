@@ -8,7 +8,7 @@ const useLoadLocation = (locationDispatch, location, setIsLoading) => {
       locationDispatch({ type: "changeCurrentLocation", payload: data });
       setTimeout(function () {
         setIsLoading(false);
-      }, 700);
+      }, 500);
     };
 
     if (location !== "") loadLocation();

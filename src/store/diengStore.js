@@ -37,8 +37,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "80",
-          left: "3",
+          top: "85",
+          left: "15",
         },
       },
       details: {
@@ -70,8 +70,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "76",
-          left: "29",
+          top: "85",
+          left: "41",
         },
       },
       details: {
@@ -103,8 +103,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "79",
-          left: "65",
+          top: "90",
+          left: "77",
         },
       },
       details: {
@@ -136,8 +136,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "56",
-          left: "72",
+          top: "65",
+          left: "85",
         },
       },
       details: {
@@ -169,8 +169,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "46",
-          left: "71",
+          top: "52",
+          left: "83",
         },
       },
       details: {
@@ -202,8 +202,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "48",
-          left: "33",
+          top: "55",
+          left: "44",
         },
       },
       details: {
@@ -235,8 +235,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "54",
-          left: "48",
+          top: "60",
+          left: "60",
         },
       },
       details: {
@@ -268,8 +268,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "36",
-          left: "35",
+          top: "42",
+          left: "51",
         },
       },
       details: {
@@ -301,8 +301,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "39",
-          left: "6",
+          top: "45",
+          left: "20",
         },
       },
       details: {
@@ -334,8 +334,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "18",
-          left: "41",
+          top: "24",
+          left: "53",
         },
       },
       details: {
@@ -367,8 +367,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "64",
-          left: "31",
+          top: "70",
+          left: "42",
         },
       },
       details: {
@@ -400,8 +400,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "18",
-          left: "5",
+          top: "24",
+          left: "17",
         },
       },
       details: {
@@ -433,8 +433,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "15",
-          left: "65",
+          top: "21",
+          left: "78",
         },
       },
       details: {
@@ -466,8 +466,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "61",
-          left: "8",
+          top: "62",
+          left: "18",
         },
       },
       details: {
@@ -499,8 +499,8 @@ const diengStore = {
       },
       popup: {
         position: {
-          top: "29",
-          left: "24",
+          top: "35",
+          left: "36",
         },
       },
       details: {
