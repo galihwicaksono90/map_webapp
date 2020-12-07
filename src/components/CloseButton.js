@@ -1,9 +1,9 @@
 import { AiOutlineClose } from "react-icons/ai";
 
-const CloseButton = ({ setState, state }) => {
+const CloseButton = ({ closeDetails }) => {
   return (
     <>
-      <button onClick={() => setState(!state)} className="btn-close">
+      <button onClick={closeDetails} className="btn-close">
         <AiOutlineClose />
       </button>
     </>

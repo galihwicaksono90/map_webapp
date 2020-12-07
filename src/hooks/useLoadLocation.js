@@ -8,10 +8,9 @@ const useLoadLocation = (locationDispatch, location, setIsLoading) => {
       locationDispatch({ type: "changeCurrentLocation", payload: data });
       setTimeout(function () {
         setIsLoading(false);
-      }, 1500);
+      }, 700);
     };
 
-    // skip on first render
     if (location !== "") loadLocation();
 
     return locationDispatch({ type: "changeCurrentLocation", payload: {} });

@@ -21,6 +21,7 @@ const diengStore = {
   attractions: {
     mangli: {
       name: "Gelanggang Renang Mangli",
+      name_short: "mangli",
       description: {
         en:
           "This swimming pool was presented by aqua, a famous mineral water   factories as a gift and tribute to the people of wonosobo.  This arena has a national standard size and can be used to held  swimming competition.",
@@ -53,6 +54,7 @@ const diengStore = {
     },
     kalianget: {
       name: "Pemandian Air Panas Kalianget",
+      name_short: "kalianget",
       description: {
         en:
           "Kalianget hot spring bath is located 3 km  north of Wonosobo city centre. This tourist attraction is a natural hot spring bath with high sulfur content wich can cure skin diseases. The concept of the swimming pool is resemble as that of Japanese hot springs. The facilities of this resort is include football fields, tennis courts, swimming pools, fisheries, and playgrounds",
@@ -85,6 +87,7 @@ const diengStore = {
     },
     sendangsari: {
       name: "Desa Wisata Sendangsari",
+      name_short: "sendangsari",
       description: {
         en:
           "Sendangsari  village or known as dewi Sri village, is one of the tourism village located on Garung Dis- trict. The village on the west side of Sindoro Mountain has the charm of rural nature. Dewi sri Village also has a rich diversity in culture such as lengger dance, kuda lumping, lengger angklung, liong naga, bar- aongsai,and rudat (javanese martial art). It often visited by sudents to learn about farming (planting and  harvesting rice,). Here Tourists will also be over- whelmed with River tubing,  adventurous water games ",
@@ -117,6 +120,7 @@ const diengStore = {
     },
     lengkong: {
       name: "Paralayang Lengkong",
+      name_short: "lengkong",
       description: {
         en:
           "Tourist attraction  in Lengkong Tourist Village of Mojotengah District is paragliding. Every year there is a national paragliding competition held here. Visitors only have to pay 350,000 rupiah and a pro- fessional paraglider will  accompany you to fly. In ad- dition visitors can also see beautiful scenery and feel ",
@@ -149,6 +153,7 @@ const diengStore = {
     },
     kejajar: {
       name: "Tambi Kejajar",
+      name_short: "kejajar",
       description: {
         en:
           "The Sindoro foothills have a large tea platation at an altitude of 1200 meters to over 2000 meters above sea level. The air temperature of this area is about 15 to 24 degrees celcius. Tambi tourism is located on the tambi complex with tea plantation and tea factories, cottege tourism, as well as outward bound facilities.",
@@ -181,6 +186,7 @@ const diengStore = {
     },
     bukitCinta: {
       name: "Bukit Cinta Maron",
+      name_short: "bukitCinta",
       description: {
         en:
           " The cinta hills of the Seroja Valley offer beautiful scenery. The Seroja Valley is located above Lake Menjer and has a very natural and beautiful view. Visi- tors can see the scenery of Menjer Lake from the top of the hill. The cinta hills of this Seroja Valley are located about 12 km from the city centre of Wonosobo. Visitors can take a selfie with the background Menjer Lake, Sindoro Mountain and Kembang Mountain. In this place there is a heart-shaped photo spot made of bamboo. Visitors also can set up tents near the cinta  ",
@@ -213,6 +219,7 @@ const diengStore = {
     },
     seroja: {
       name: "Lembah Seroja",
+      name_short: "seroja",
       description: {
         en:
           "The Seroja hills on the border of Maron and Tlogo villages, just above Lake Menjer. From the hills of Seroja, you can see the scenery of Menjer Lake, Sin- doro Mountain and Kembang Mountain. T he shade of trees and the green atmosphere allow visitors to rest their hearts, eyes and mind. If the weather is good, visitors can also see the scenery of Wonosobo County from the Soraja hills. Sunrise and sunset will be better to be seen from  the Seroja hills. ",
@@ -245,6 +252,7 @@ const diengStore = {
     },
     dpt: {
       name: "Dieng Plateau Theater",
+      name_short: "dpt",
       description: {
         en:
           "Dieng Plateau Theather is a must visited place when come to dieng plateu. This place will give in- formation about dieng plateu at a glace. In room with 100 person capacity,  visitors will be presented with movie about Dieng Plateu from the history, geography conditition, culture, etc. Watching 23 minutes movie, visitors will  know about dieng plateu and people who lived in this area. Dieng plateu Theather operate from ",
@@ -277,6 +285,7 @@ const diengStore = {
     },
     sikunir: {
       name: "Sunrise Sikunir Desa Sembungan",
+      name_short: "sikunir",
       description: {
         en:
           "Sikunir hill is one of main atrractions of dieng. In this site, a a breathtaking view of sunrise, known phenomenally as golden sunrise can be seen. From the top of sikunir, tourists can watch five top of mountains in a row from a distance or Houses of the villagers and Cebong Lake  shrouded in haze beautifully. T he beauty of nature and its cool air combined with the kindness and warmth of the will make an unfor- getable journey. In Sembungan Village, there is also Sikarim Waterfalls which lies under the village. This waterfall has 24 metres height with Sikunir Hill as the ",
@@ -309,6 +318,7 @@ const diengStore = {
     },
     patakBanteng: {
       name: "Puncak Sikunir via Patak Banteng",
+      name_short: "patakBanteng",
       description: {
         en:
           "The Village of Campursari is located in the Kejajar Sub district in the western part of Bismo Mountain. Some of the tourist resorts in Campursari are the Ko- pen Hill, Tirta terapi Spa, Sikrasak Waterfall, Silamp- or Waterfall, Sijleber Waterfall, Sikuwung Waterfall, Sigrinjing Waterfall, and Bismo Mountain. T here are also beautiful sunrises in Bismo Mountain and the scenery of Wonosobo County from the top of Bismo mountains. Visitors can see some mountains, such as Sindoro Mountain, sumbing Mountain, and ",
@@ -341,6 +351,7 @@ const diengStore = {
     },
     menjer: {
       name: "Telaga Menjer",
+      name_short: "menjer",
       description: {
         en:
           "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
@@ -373,6 +384,7 @@ const diengStore = {
     },
     campursari: {
       name: "Desa Wisata Campursari",
+      name_short: "campursari",
       description: {
         en:
           "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
@@ -405,6 +417,7 @@ const diengStore = {
     },
     gunungPrau: {
       name: "Gunung Prau",
+      name_short: "gunungPrau",
       description: {
         en:
           "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
@@ -437,6 +450,7 @@ const diengStore = {
     },
     curugSikarim: {
       name: "Curug Sikarim",
+      name_short: "curugSikarim",
       description: {
         en:
           "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
@@ -469,6 +483,7 @@ const diengStore = {
     },
     candi: {
       name: "Candi Dieng",
+      name_short: "candi",
       description: {
         en:
           "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",

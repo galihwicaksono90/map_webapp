@@ -2,7 +2,7 @@ import React, { createContext, useReducer } from "react";
 import LocationReducer from "../reducers/LocationReducer";
 
 // append array to add available locations
-const defaultAvailableLocations = ["dieng", "wadaslintang"];
+const defaultAvailableLocations = ["dieng", "wadaslintang", "kertek"];
 
 const locationContextDefaultValue = {
   currentLocation: {},

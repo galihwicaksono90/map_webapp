@@ -95,3 +95,10 @@
   opacity: 0;
   transtion: opacity $speed-fast ease-in-out;
 }
+
+@media (max-width: 700px) {
+  .location-selector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

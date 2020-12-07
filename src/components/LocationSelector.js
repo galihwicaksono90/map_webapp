@@ -5,17 +5,15 @@ import { Link } from "react-router-dom";
 import "../scss/locationSelector.scss";
 import diengMap from "../store/img/dieng/map.png";
 import wadaslintangMap from "../store/img/wadaslintang/map.png";
+import kertekMap from "../store/img/kertek/map.png";
 
 // add to array to add new location map image
-const imageArray = [diengMap, wadaslintangMap];
+const imageArray = [diengMap, wadaslintangMap, kertekMap];
 
-const LocationSelector = ({
-  setIsLoading,
-  locationSelectorShow,
-  setLocationSelectorShow,
-}) => {
+const LocationSelector = ({ setIsLoading }) => {
   const { locationState } = useContext(LocationContext);
   const { availableLocations } = locationState;
+  const [locationSelectorShow, setLocationSelectorShow] = useState(true);
 
   return (
     <CSSTransition
@@ -30,7 +28,7 @@ const LocationSelector = ({
           <div className={`location-selection-container`} key={index}>
             <div className="location-selection-overlay">
               <h1>
-                <Link to={`/location/${location}`}>{location}</Link>
+                <Link to={`/${location}`}>{location}</Link>
               </h1>
             </div>
             <div

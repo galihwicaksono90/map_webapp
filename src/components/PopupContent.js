@@ -1,9 +1,10 @@
 import "../scss/popupmenuContent.scss";
+import { Link } from "react-router-dom";
 
 const PopupContent = ({
+  currentLocation,
   currentAttraction,
   currentLanguage,
-  setOpenDetails,
 }) => {
   return (
     <div className="popup-content">
@@ -11,9 +12,9 @@ const PopupContent = ({
       <br />
       <p>{currentAttraction.description[currentLanguage]}</p>
       <br />
-      <button onClick={() => setOpenDetails(true)} className="btn-normal">
+      <Link to={`/${currentLocation.name}/${currentAttraction.name_short}`}>
         Show More
-      </button>
+      </Link>
     </div>
   );
 };

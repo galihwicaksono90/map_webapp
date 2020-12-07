@@ -48,11 +48,11 @@ const MainMap = ({ match }) => {
               setPopupOpen={setPopupOpen}
             />
             <PopupMenu
+              currentLocation={currentLocation}
               currentAttraction={currentAttraction}
               currentLanguage={currentLanguage}
               popupOpen={popupOpen}
               setPopupOpen={setPopupOpen}
-              /* setOpenDetails={setOpenDetails} */
             />
           </div>
         </CSSTransition>

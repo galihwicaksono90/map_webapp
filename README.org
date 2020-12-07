@@ -1,6 +1,19 @@
-* TODO Fix map icons position
-* TODO Add Kertek and Selomerto Map Data
-* TODO Wire up Details component to router
-* TODO Fix Small Gallery Component
-* TODO Add navbar and footer
-* TODO 
+* Todos [0/10]
+** TODO Wire-up Details component to router
+** TODO Fix SmallGallery Component
+** TODO Fix map icons position
+** TODO Add GMaps addresses to each attractions [0/1]
+- [ ] Set link to open in new tab
+** TODO Add new locations [1/3]
+- [X] Kertek
+- [ ] Selomerto
+- [ ] Sapuran
+** TODO Add navbar and footer [0/2]
+- [ ] Navbar
+- [ ] Footer
+** TODO Fix Icons scaling
+- How? I don't know yet...
+** TODO Learn unit testing Jest
+** TODO Semantics
+Whatever that is...
+** TODO host app in github
