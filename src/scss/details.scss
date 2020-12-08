@@ -1,9 +1,18 @@
 @import "variables.scss";
 
+.details-container {
+  background-color: $black-transparent;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // pointer-events: none;
+}
 .details {
   box-sizing: border-box;
   height: 95%;
-  width: 95%;
+  width: 97%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -19,9 +28,27 @@
 }
 
 .details-top {
+  position: relative;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.btn-close {
+  position: fixed;
+  background: $yellow;
+  border: none;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -8,12 +8,16 @@ const PopupMenu = ({
   currentLanguage,
   popupOpen,
   setPopupOpen,
-  setOpenDetails,
+  openDetails,
 }) => {
   const popupStyle = () => {
+    const popupPositionAdder = 5;
     return {
-      top: currentAttraction.popup.position.top + "%",
-      left: currentAttraction.popup.position.left + "%",
+      top:
+        parseInt(currentAttraction.icon.position.top) +
+        popupPositionAdder +
+        "%",
+      left: currentAttraction.icon.position.left + "%",
     };
   };
   return (
@@ -37,7 +41,8 @@ const PopupMenu = ({
               currentLocation={currentLocation}
               currentAttraction={currentAttraction}
               currentLanguage={currentLanguage}
-              setOpenDetails={setOpenDetails}
+              //prop drilling??
+              openDetails={openDetails}
             />
           </div>
         </CSSTransition>

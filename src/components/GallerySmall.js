@@ -10,17 +10,18 @@ const GallerySmall = ({ term = "mountain" }) => {
   const [images, setImages] = useState([]);
   const asdfRef = useRef();
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const res = await fetch(
-  //       `https:pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&image_type=photo&q={term}page=1&per_page=6`
-  //     ).catch((err) => console.log(err));
-  //     const data = await res.json();
-  //     setImages(data);
-  //     setIsLoading(false);
-  //   };
-  //   fetchData();
-  // }, [term]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch(
+        `https:pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&image_type=photo&q={term}page=1&per_page=6`
+      ).catch((err) => console.log(err));
+      const data = await res.json();
+      setImages(data);
+      console.log(images);
+      setIsLoading(false);
+    };
+    fetchData();
+  }, [term]);
 
   return (
     <div className="gallery-container">

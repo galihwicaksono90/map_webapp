@@ -25,15 +25,10 @@ const kertekStore = {
           top: "50",
           left: "33",
         },
-      },
-      popup: {
-        position: {
-          top: "65",
-          left: "33",
-        },
+        scale: "2.7",
       },
       details: {
-        address: "Jl giyanti 150 asdf Wonosobo",
+        address: "Jl giyanti 150  Wonosobo",
         openHour: "08.00 - 20.00",
         phone: "0812-1234-1234",
         email: "giyanti@dieng.com",
@@ -58,15 +53,10 @@ const kertekStore = {
           top: "51",
           left: "67",
         },
-      },
-      popup: {
-        position: {
-          top: "66",
-          left: "67",
-        },
+        scale: "2",
       },
       details: {
-        address: "Jl kumandang 150 asdf Wonosobo",
+        address: "Jl kumandang 150  Wonosobo",
         openHour: "08.00 - 20.00",
         phone: "0812-1234-1234",
         email: "kumandang@dieng.com",
@@ -75,39 +65,6 @@ const kertekStore = {
         gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
       },
       term: "market",
-    },
-    reco: {
-      name: "Reco",
-      name_short: "reco",
-      description: {
-        en:
-          "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
-        in:
-          "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
-      },
-      icon: {
-        image: recoIcon,
-        position: {
-          top: "25",
-          left: "51",
-        },
-      },
-      popup: {
-        position: {
-          top: "40",
-          left: "51",
-        },
-      },
-      details: {
-        address: "Jl reco 150 asdf Wonosobo",
-        openHour: "08.00 - 20.00",
-        phone: "0812-1234-1234",
-        email: "reco@dieng.com",
-        twitter: "@reco-twitter",
-        instagram: "@reco-insta",
-        gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
-      },
-      term: "coffee",
     },
     sindoro: {
       name: "Gunung Sindoro",
@@ -124,15 +81,10 @@ const kertekStore = {
           top: "13",
           left: "35",
         },
-      },
-      popup: {
-        position: {
-          top: "28",
-          left: "35",
-        },
+        scale: "1",
       },
       details: {
-        address: "Jl sindoro 150 asdf Wonosobo",
+        address: "Jl sindoro 150  Wonosobo",
         openHour: "08.00 - 20.00",
         phone: "0812-1234-1234",
         email: "sindoro@dieng.com",
@@ -157,15 +109,10 @@ const kertekStore = {
           top: "15",
           left: "88",
         },
-      },
-      popup: {
-        position: {
-          top: "30",
-          left: "88",
-        },
+        scale: "1",
       },
       details: {
-        address: "Jl sumbing 150 asdf Wonosobo",
+        address: "Jl sumbing 150  Wonosobo",
         openHour: "08.00 - 20.00",
         phone: "0812-1234-1234",
         email: "sumbing@dieng.com",
@@ -174,6 +121,34 @@ const kertekStore = {
         gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
       },
       term: "mountain",
+    },
+    reco: {
+      name: "Reco",
+      name_short: "reco",
+      description: {
+        en:
+          "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
+        in:
+          "Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat. ",
+      },
+      icon: {
+        image: recoIcon,
+        position: {
+          top: "24",
+          left: "51",
+        },
+        scale: "2.1",
+      },
+      details: {
+        address: "Jl reco 150  Wonosobo",
+        openHour: "08.00 - 20.00",
+        phone: "0812-1234-1234",
+        email: "reco@dieng.com",
+        twitter: "@reco-twitter",
+        instagram: "@reco-insta",
+        gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+      },
+      term: "coffee",
     },
     wilayu: {
       name: "Pasar Wilayu",
@@ -187,18 +162,13 @@ const kertekStore = {
       icon: {
         image: wilayuIcon,
         position: {
-          top: "73",
-          left: "21",
+          top: "74",
+          left: "23",
         },
-      },
-      popup: {
-        position: {
-          top: "88",
-          left: "21",
-        },
+        scale: "2",
       },
       details: {
-        address: "Jl wilayu 150 asdf Wonosobo",
+        address: "Jl wilayu 150  Wonosobo",
         openHour: "08.00 - 20.00",
         phone: "0812-1234-1234",
         email: "wilayu@dieng.com",

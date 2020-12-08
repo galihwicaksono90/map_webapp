@@ -31,15 +31,10 @@ const diengStore = {
       icon: {
         image: mangliIcon,
         position: {
-          top: "74",
+          top: "73",
           left: "15",
         },
-      },
-      popup: {
-        position: {
-          top: "85",
-          left: "15",
-        },
+        scale: "1",
       },
       details: {
         address: "Jl Mangli 150 asdf Wonosobo",
@@ -65,14 +60,9 @@ const diengStore = {
         image: kaliangetIcon,
         position: {
           top: "70",
-          left: "41",
+          left: "42",
         },
-      },
-      popup: {
-        position: {
-          top: "85",
-          left: "41",
-        },
+        scale: "1.3",
       },
       details: {
         address: "Jl Kalianget 150 asdf Wonosobo",
@@ -97,15 +87,10 @@ const diengStore = {
       icon: {
         image: sendangsariIcon,
         position: {
-          top: "75",
+          top: "78",
           left: "77",
         },
-      },
-      popup: {
-        position: {
-          top: "90",
-          left: "77",
-        },
+        scale: "1.5",
       },
       details: {
         address: "Jl Sendangsari 150 asdf Wonosobo",
@@ -131,14 +116,9 @@ const diengStore = {
         image: lengkongIcon,
         position: {
           top: "50",
-          left: "85",
+          left: "86",
         },
-      },
-      popup: {
-        position: {
-          top: "65",
-          left: "85",
-        },
+        scale: "1",
       },
       details: {
         address: "Jl Lengkong 150 asdf Wonosobo",
@@ -163,15 +143,10 @@ const diengStore = {
       icon: {
         image: kejajarIcon,
         position: {
-          top: "40",
-          left: "83",
+          top: "39",
+          left: "84",
         },
-      },
-      popup: {
-        position: {
-          top: "52",
-          left: "83",
-        },
+        scale: "1.4",
       },
       details: {
         address: "Jl Kejajar 150 asdf Wonosobo",
@@ -199,12 +174,7 @@ const diengStore = {
           top: "43",
           left: "44",
         },
-      },
-      popup: {
-        position: {
-          top: "55",
-          left: "44",
-        },
+        scale: "0.7",
       },
       details: {
         address: "Jl  150 asdf Wonosobo",
@@ -229,15 +199,10 @@ const diengStore = {
       icon: {
         image: serojaIcon,
         position: {
-          top: "48",
-          left: "60",
+          top: "49",
+          left: "62",
         },
-      },
-      popup: {
-        position: {
-          top: "60",
-          left: "60",
-        },
+        scale: "0.8",
       },
       details: {
         address: "Jl Seroja 150 asdf Wonosobo",
@@ -262,15 +227,10 @@ const diengStore = {
       icon: {
         image: dptIcon,
         position: {
-          top: "30",
-          left: "51",
+          top: "29",
+          left: "53",
         },
-      },
-      popup: {
-        position: {
-          top: "42",
-          left: "51",
-        },
+        scale: "1.3",
       },
       details: {
         address: "Jl DPT 150 asdf Wonosobo",
@@ -295,15 +255,10 @@ const diengStore = {
       icon: {
         image: sikunirIcon,
         position: {
-          top: "33",
+          top: "34",
           left: "20",
         },
-      },
-      popup: {
-        position: {
-          top: "45",
-          left: "20",
-        },
+        scale: "0.9",
       },
       details: {
         address: "Jl Sukunir 150 asdf Wonosobo",
@@ -331,12 +286,7 @@ const diengStore = {
           top: "12",
           left: "53",
         },
-      },
-      popup: {
-        position: {
-          top: "24",
-          left: "53",
-        },
+        scale: "1.2",
       },
       details: {
         address: "Jl PatakBanteng 150 asdf Wonosobo",
@@ -361,15 +311,10 @@ const diengStore = {
       icon: {
         image: menjerIcon,
         position: {
-          top: "58",
-          left: "42",
+          top: "56",
+          left: "43",
         },
-      },
-      popup: {
-        position: {
-          top: "70",
-          left: "42",
-        },
+        scale: "1.9",
       },
       details: {
         address: "Jl Menjer 150 asdf Wonosobo",
@@ -397,12 +342,7 @@ const diengStore = {
           top: "12",
           left: "17",
         },
-      },
-      popup: {
-        position: {
-          top: "24",
-          left: "17",
-        },
+        scale: "2",
       },
       details: {
         address: "Jl Campursari 150 asdf Wonosobo",
@@ -427,15 +367,10 @@ const diengStore = {
       icon: {
         image: gunungPrauIcon,
         position: {
-          top: "9",
-          left: "78",
+          top: "8",
+          left: "81",
         },
-      },
-      popup: {
-        position: {
-          top: "21",
-          left: "78",
-        },
+        scale: "1.2",
       },
       details: {
         address: "jl Gunung Prau 150 asdf wonosobo",
@@ -460,15 +395,10 @@ const diengStore = {
       icon: {
         image: curugSikarimIcon,
         position: {
-          top: "54",
-          left: "18",
+          top: "52",
+          left: "19",
         },
-      },
-      popup: {
-        position: {
-          top: "62",
-          left: "18",
-        },
+        scale: "1.8",
       },
       details: {
         address: "Jl Sikarim 150 asdf Wonosobo",
@@ -493,15 +423,10 @@ const diengStore = {
       icon: {
         image: candiDiengIcon,
         position: {
-          top: "23",
-          left: "36",
+          top: "24",
+          left: "37",
         },
-      },
-      popup: {
-        position: {
-          top: "35",
-          left: "36",
-        },
+        scale: "1.3",
       },
       details: {
         address: "Jl Candi Dieng 150 asdf Wonosobo",

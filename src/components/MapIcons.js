@@ -6,10 +6,17 @@ const MapIcons = ({
   setPopupOpen,
   currentAttraction,
 }) => {
-  const iconStyle = (attraction) => ({
+  const getIconPosition = (attraction) => ({
     top: currentLocation.attractions[attraction].icon.position.top + "%",
     left: currentLocation.attractions[attraction].icon.position.left + "%",
   });
+
+  const getIconScale = (attraction) => {
+    return {
+      transform: `scale(${currentLocation.attractions[attraction].icon.scale})`,
+    };
+  };
+
   const popupHandler = (attraction) => {
     currentAttraction === currentLocation.attractions[attraction] && popupOpen
       ? setPopupOpen(false)
@@ -31,13 +38,14 @@ const MapIcons = ({
               ? "mainmap-icon-active"
               : ""
           }`}
-          style={iconStyle(attraction)}
+          style={getIconPosition(attraction)}
           onClick={() => popupHandler(attraction)}
         >
           <img
-            className={"mainmap-icon-image"}
+            className="mainmap-icon-image"
             alt=""
             src={currentLocation.attractions[attraction].icon.image}
+            style={getIconScale(attraction)}
           />
         </li>
       ))}

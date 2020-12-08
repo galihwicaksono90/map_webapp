@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 const useLoadLocation = (locationDispatch, location, setIsLoading) => {
+  const loadDelay = 0;
   useEffect(() => {
     const loadLocation = async () => {
       const res = await import(`../store/${location}Store.js`);
@@ -8,7 +9,7 @@ const useLoadLocation = (locationDispatch, location, setIsLoading) => {
       locationDispatch({ type: "changeCurrentLocation", payload: data });
       setTimeout(function () {
         setIsLoading(false);
-      }, 500);
+      }, loadDelay);
     };
 
     if (location !== "") loadLocation();

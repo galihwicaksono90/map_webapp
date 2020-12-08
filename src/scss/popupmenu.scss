@@ -6,7 +6,8 @@
   width: 300px;
   padding: 15px;
   box-shadow: $box-shadow-1;
-  transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   // transform-origin: top left;
   font-size: 0.9rem;
 

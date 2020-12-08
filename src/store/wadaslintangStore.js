@@ -5,6 +5,8 @@ import lubangSewuIcon from "./img/wadaslintang/lubangSewu.png";
 import panerusanIcon from "./img/wadaslintang/panerusan.png";
 import sumberejoIcon from "./img/wadaslintang/sumberejo.png";
 import sumogedeIcon from "./img/wadaslintang/sumogede.png";
+import winongIcon from "./img/wadaslintang/winong.png";
+import wadukIcon from "./img/wadaslintang/waduk.png";
 import wadaslintangMap from "./img/wadaslintang/map_empty.png";
 
 const wadaslintangStore = {
@@ -24,14 +26,9 @@ const wadaslintangStore = {
         image: bendunganIcon,
         position: {
           top: "70",
-          left: "29",
+          left: "28",
         },
-      },
-      popup: {
-        position: {
-          top: "85",
-          left: "29",
-        },
+        scale: "3",
       },
       details: {
         address: "Jl bendungan 150 asdf Wonosobo",
@@ -59,12 +56,7 @@ const wadaslintangStore = {
           top: "26",
           left: "19",
         },
-      },
-      popup: {
-        position: {
-          top: "41",
-          left: "19",
-        },
+        scale: "1",
       },
       details: {
         address: "Jl kumejing 150 asdf Wonosobo",
@@ -92,12 +84,7 @@ const wadaslintangStore = {
           top: "10",
           left: "18",
         },
-      },
-      popup: {
-        position: {
-          top: "25",
-          left: "18",
-        },
+        scale: "1",
       },
       details: {
         address: "Jl lancar 150 asdf Wonosobo",
@@ -122,15 +109,10 @@ const wadaslintangStore = {
       icon: {
         image: lubangSewuIcon,
         position: {
-          top: "46",
-          left: "80",
+          top: "45",
+          left: "82",
         },
-      },
-      popup: {
-        position: {
-          top: "61",
-          left: "80",
-        },
+        scale: "1.3",
       },
       details: {
         address: "Jl Lubang Sewu 150 asdf Wonosobo",
@@ -155,15 +137,10 @@ const wadaslintangStore = {
       icon: {
         image: panerusanIcon,
         position: {
-          top: "33",
-          left: "88",
+          top: "32",
+          left: "89",
         },
-      },
-      popup: {
-        position: {
-          top: "48",
-          left: "88",
-        },
+        scale: "1.4",
       },
       details: {
         address: "Jl Panerusan Sewu 150 asdf Wonosobo",
@@ -189,14 +166,9 @@ const wadaslintangStore = {
         image: sumberejoIcon,
         position: {
           top: "62",
-          left: "81",
+          left: "82",
         },
-      },
-      popup: {
-        position: {
-          top: "77",
-          left: "81",
-        },
+        scale: "1.3",
       },
       details: {
         address: "Jl Sumberejo Sewu 150 asdf Wonosobo",
@@ -224,12 +196,7 @@ const wadaslintangStore = {
           top: "7.5",
           left: "44",
         },
-      },
-      popup: {
-        position: {
-          top: "22.5",
-          left: "44",
-        },
+        scale: "1",
       },
       details: {
         address: "Jl Sumogede Sewu 150 asdf Wonosobo",
@@ -238,6 +205,62 @@ const wadaslintangStore = {
         email: "Sumogede Sewu@dieng.com",
         twitter: "@Sumogede Sewu-twitter",
         instagram: "@Sumogede Sewu-insta",
+        gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+      },
+      term: "forest",
+    },
+    winong: {
+      name: "Curug Winong",
+      name_short: "winong",
+      description: {
+        en:
+          "Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit. ",
+        in:
+          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.",
+      },
+      icon: {
+        image: winongIcon,
+        position: {
+          top: "7",
+          left: "66",
+        },
+        scale: "1.4",
+      },
+      details: {
+        address: "Jl winong Sewu 150 asdf Wonosobo",
+        openHour: "08.00 - 20.00",
+        phone: "0812-1234-1234",
+        email: "winong Sewu@dieng.com",
+        twitter: "@winong Sewu-twitter",
+        instagram: "@winong Sewu-insta",
+        gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
+      },
+      term: "forest",
+    },
+    waduk: {
+      name: "Waduk Wadaslintang",
+      name_short: "waduk",
+      description: {
+        en:
+          "Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit. ",
+        in:
+          "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.",
+      },
+      icon: {
+        image: wadukIcon,
+        position: {
+          top: "40",
+          left: "42",
+        },
+        scale: "4.8",
+      },
+      details: {
+        address: "Jl waduk Sewu 150 asdf Wonosobo",
+        openHour: "08.00 - 20.00",
+        phone: "0812-1234-1234",
+        email: "waduk Sewu@dieng.com",
+        twitter: "@waduk Sewu-twitter",
+        instagram: "@waduk Sewu-insta",
         gmaps: "https://goo.gl/maps/jCjrN1zS5b8qcPnf8",
       },
       term: "forest",
