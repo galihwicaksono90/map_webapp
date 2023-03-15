@@ -29,7 +29,7 @@ function App() {
               }
             }}
           />
-          <Route path="/" component={ErrorPage} />
+          {/* <Route path="/" component={ErrorPage} /> */}
         </Switch>
       </Router>
     </div>
