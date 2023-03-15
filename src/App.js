@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  HashRouter,
+} from "react-router-dom";
 import LocationSelector from "./components/LocationSelector";
 import MainMap from "./components/MainMap";
 import Footer from "./components/Footer";
@@ -13,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         <Switch>
           <Route exact path="/">
             <LocationSelector />
@@ -29,9 +34,9 @@ function App() {
               }
             }}
           />
-          {/* <Route path="/" component={ErrorPage} /> */}
+          <Route path="/" component={ErrorPage} />
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
